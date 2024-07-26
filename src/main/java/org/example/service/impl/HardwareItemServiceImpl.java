@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class HardwareItemImpl implements HardwareItemService {
+public class HardwareItemServiceImpl implements HardwareItemService {
 
     private final HardwareItemRepository repository;
     private final ObjectMapper mapper;

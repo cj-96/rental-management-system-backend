@@ -5,18 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Rental {
+public class RentalDetail {
+
     private Long id;
-    private Date rentalDate;
-    private Date dueDate;
-    private Date returnDate;
-    private double totalCost;
-    private double fine;
-    private Long customerId;
+    private Long rentalId;
+    private Long hardwareId;
+    private int qty;
+    private Double totalCost;
 }

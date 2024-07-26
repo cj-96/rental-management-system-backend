@@ -20,5 +20,5 @@ public class HardwareItemEntity {
     private String name;
     private Double rentalPerDay;
     private Double finePerDay;
-    private String availability;
+    private int qty;
 }

@@ -6,23 +6,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "rental")
-public class RentalEntity {
-
+@Table(name = "rentalDetail")
+public class RentalDetailEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date rentalDate;
-    private Date dueDate;
-    private Date returnDate;
-    private double totalCost;
-    private double fine;
-    private Long customerId;
+    private Long rentalId;
+    private Long hardwareId;
+    private int qty;
+    private Double totalCost;
 }

@@ -15,5 +15,5 @@ public class HardwareItem {
     private String name;
     private Double rentalPerDay;
     private Double finePerDay;
-    private String availability;
+    private int qty;
 }
